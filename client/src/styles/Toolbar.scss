@@ -1,0 +1,55 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+
+.toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .title-container {
+        display: flex;
+        align-items: center;
+
+        .logo-text {
+            color: $dk-blue;
+            font-size: 2.5rem;
+            font-weight: 600;
+            margin-left: 15px;
+            margin-top: -15px;
+            margin-bottom: -10px;
+        }
+    }
+}
+
+// ----------------------------------------------------
+// Media queries
+@media only screen and (max-width: 1182px) {
+    .logo-container {
+        transform: scale(.7);
+    }
+
+    .text-container {
+        margin-top: 3px;
+        margin-left: -18px !important;
+    }
+
+    .logo-text {
+        font-size: 1.7rem !important;
+    }
+}
+
+@media only screen and (max-width: 893px) {
+    .logo-container {
+        transform: scale(.6);
+    }
+
+    .text-container {
+        margin-top: 5px;
+        margin-left: -18px !important;
+    }
+
+    .logo-text {
+        font-size: 1.3rem !important;
+    }
+}

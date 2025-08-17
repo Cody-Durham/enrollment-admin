@@ -1,1 +1,1 @@
-# enrollment-admin
+# open_enrollment_admin

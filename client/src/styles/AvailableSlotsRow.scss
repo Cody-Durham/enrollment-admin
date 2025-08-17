@@ -1,0 +1,58 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+
+.header-avail-slots-container {
+    display: flex;
+    #text {
+        color: $dk-blue;
+        font-weight: 650;
+    }
+
+    .header-item-container {
+        border: 1px solid $grey2;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 20%;
+        padding: 8px 20px;
+        background: $pale-blue;
+        font-weight: 500;
+        font-size: 1.1rem;
+    }
+}
+.avail-slots-container {
+    display: flex;
+
+    .item-container {
+        border-top: 1px solid $grey1;
+        border-bottom: 1px solid $grey1;
+        border-left: 1px solid $grey1;
+        border-right: 1px solid $grey1;
+        display: flex;
+        align-items: center;
+        height: 100px;
+        width: 20%;
+        padding: 8px 20px;
+        font-weight: 500;
+
+        input[type="text"] {
+            @include standardInput;
+            padding-left: 10px;
+            max-width: 100px;
+        }
+
+    }
+    .grade-font {
+        font-weight: 600;
+        font-size: 1rem;
+        color: $pearl-blue;
+    }
+    .numbers {
+        font-weight: 600;
+    }
+}
+
+.disabled-input {
+    background: $grey1;
+    color: black;
+}

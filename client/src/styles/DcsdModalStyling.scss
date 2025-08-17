@@ -1,0 +1,51 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+// // ! Important ! //
+// // All styling that needs to be done for Open Enrollment modals (text & layout) is done in this SINGLE file
+.title {
+    color: $pearl-blue;
+}
+.text-color {
+    color: $pearl-blue;
+    font-family: 500;
+}
+
+.outer-container {
+    padding: 20px 40px;
+
+
+    .heading {
+        font-size: 1.1rem;
+        font-weight: 600;
+        color: $pearl-blue;
+        margin-bottom: 30px;
+    }
+    .instructions-container {
+        .top-sentence {
+            color: $pearl-blue;
+            font-weight: 550;
+        }
+        .number-container {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+
+            .number {
+                border: 2px solid $pearl-blue;
+                @include borderRadius(40px);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.5rem;
+                min-height: 40px;
+                min-width: 40px;
+                color: $pearl-blue;
+                margin-right: 10px;
+            }
+            .instruction {
+                color: $pearl-blue;
+            }
+        }
+    }
+}

@@ -1,0 +1,20 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.footer-avail-slots-container {
+    display: flex;
+    #text {
+        color: $dk-blue;
+        font-weight: 650;
+        font-size: 1.1rem;
+    }
+
+    .footer-item-container {
+        border: 1px solid $grey2;
+        width: 20%;
+        padding: 8px 20px;
+        background: $pale-blue;
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+}

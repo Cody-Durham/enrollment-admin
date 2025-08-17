@@ -1,0 +1,67 @@
+{
+  "name": "open_enrollment_admin",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --mode development",
+    "build-dev": "npm install --latest-npm && webpack --mode=development --config webpack.dev.config.js",
+    "build-prod": "npm install --latest-npm && webpack --mode=production --config webpack.prod.config.js",
+    "test": "jest",
+    "eslint": "eslint . --ext .js,.jsx;"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dcsd/open_enrollment_admin.git"
+  },
+  "author": "DCSD",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dcsd/open_enrollment_admin/issues"
+  },
+  "homepage": "https://github.com/dcsd/open_enrollment_admin#readme",
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-object-rest-spread": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.4",
+    "@babel/preset-react": "^7.24.1",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-prettier": "^5.1.3",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.1",
+    "mini-css-extract-plugin": "^2.9.0",
+    "sass": "^1.77.1",
+    "sass-loader": "^14.2.1",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@babel/eslint-parser": "^7.16.5",
+    "@babel/plugin-transform-object-rest-spread": "^7.24.1",
+    "@popperjs/core": "^2.11.8",
+    "axios": "^1.7.2",
+    "babel-loader": "^9.1.3",
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
+    "bootstrap4-min-css": "^1.0.1",
+    "css-loader": "^7.1.1",
+    "file-loader": "^6.2.0",
+    "http-proxy-middleware": "^3.0.0",
+    "popper.js": "^1.16.1",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.10.2",
+    "react-dom": "18.2.0",
+    "react-router-dom": "^6.23.0",
+    "react-toastify": "^10.0.5",
+    "style-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "url-loader": "^4.1.1",
+    "webpack-dev-server": "^5.0.4",
+    "webpack-merge": "^5.10.0"
+  }
+}

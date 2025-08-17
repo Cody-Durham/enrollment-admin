@@ -1,0 +1,34 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.form-inline {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    .keyword-container {
+        display: flex;
+        width: 875px;
+    }
+    input[type="text"] {
+        height: 36px;
+        width: 200px;
+    }
+    .clear-container {
+        @include borderRadius(0 5px 5px 0);
+        background-color: $grey0;
+        border: 1px solid $grey1;
+        contain: content;
+        height: 36px;
+        padding: 0 5px;
+        width: 36px
+    }
+    button.keyword-clear {
+        margin-top: -10px;
+        span {
+            font-size: 1.8rem;
+            margin-left: -5px;
+            z-index: 1200;
+        }
+    }
+}

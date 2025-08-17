@@ -1,0 +1,92 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.students-table {
+    table{
+        border-collapse: separate;
+        border-spacing: 0px;
+        width: 100%;
+        thead>tr>th {
+            @include borderRadius(5px 5px 0 0);
+            background-color: $pale-blue;
+            border-color: $grey2;
+            border-style: solid;
+            border-width: 1px;
+            color: $dk-blue;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 5px;
+            text-align: center;
+        }
+        tbody>tr {
+            border-left: 1px solid $grey2;
+            border-right: 1px solid $grey2;
+        }
+        tbody>tr.stripe {
+            background-color: $grey0;;
+        }
+        tbody>tr>td {
+            font-size: 0.78rem;
+            padding: 3px;
+            border-right: 1px solid $grey1;
+        }
+        tbody>tr>td.email {
+            max-width: 10%;
+            width: 180px;
+            word-wrap: anywhere;
+        }
+        td.center {
+            text-align: center;
+        }
+        tbody>tr>td.first {
+            border-left: 1px solid $grey2;
+        }
+        tbody>tr>td.last {
+            border-right: 1px solid $grey2;
+        }
+        tfoot>tr {
+            background-color: white;
+        }
+        tfoot>tr>td {
+            border-top: 1px solid $grey2;
+            padding-top: 10px;
+        }
+        tfoot>tr>td>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        tfoot>tr>td>div>.showing-records {
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 5px;
+            position: absolute;
+            right: 4%;
+        }
+    }
+}
+
+form#student-form {
+    div.input-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3px;
+    }
+    input, label, select {
+        @include borderRadius(3px);
+        display: block;
+        width: 50% !important;
+    }
+    input, select {
+        @include standardInput();
+        min-width: 180px !important;
+    }
+    label {
+        color: $grey5;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,168 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.round-tabs-container {
+    margin: 40px 0 0 0;
+}
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    .month {
+        @include borderRadius(5px 5px 0 0);
+        border-top: 1px solid $grey2;
+        border-left: 1px solid $grey2;
+        border-right: 1px solid $grey2;
+        color: $dk-blue;
+        background: $pale-blue;
+        padding: 3px 0;
+        font-size: 0.9rem;
+        font-weight: 500;
+        text-align: center;
+        width: 100%;
+    }
+    .special {
+        min-width: 220px !important;
+        width: 220px;
+        max-width: 220px;
+    }
+}
+.action-container {
+    display: flex;
+    align-items: center;
+    height: 35px;
+
+    .action-window-container {
+        border-right: 2px solid $grey1;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-weight: 500;
+        font-size: .8rem;
+        min-width: 220px !important;
+        width: 220px;
+        max-width: 220px;
+        height: 100%;
+        padding: 0 10px;
+    }
+    .action-data-container {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+
+        .window-pre {
+            display: flex;
+            justify-content: flex-end;
+            font-size: .85rem;
+            font-size: .7rem;
+            font-style: italic
+        }
+        .window-post {
+            background: rgb(130, 206, 231);
+            font-size: .7em;
+        }
+    }
+}
+.stripe {
+    background-color: $grey0;
+}
+
+.tooltip-window > .tooltip-inner {
+    background-color: $grey4a;
+    opacity: 1;
+    max-width: 100%;
+}
+
+.tool-tip-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    span {
+        font-weight: 500;
+        padding: 5px 0;
+    }
+}
+
+.school-year {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid $grey1;
+    .yellow {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        @include borderRadius(5px);
+        font-size: .87rem;
+        font-weight: 500;
+        padding: 5px 15px;
+        background: $important;
+    }
+    span {
+        font-weight: 500;
+    }
+}
+
+.round1-class {
+    @include borderRadius(3px);
+    cursor: pointer;
+    background: $pale-blue-green;
+    border: 1px solid $pale-blue-green-outline;
+    height: 30px;
+    margin-right: 5px;
+}
+.round2-class {
+    @include borderRadius(3px);
+    cursor: pointer;
+    background: $pale-purple;
+    border: 1px solid $pale-purple-outline;
+    height: 30px;
+}
+.date-placement {
+    font-weight: 500;
+    white-space: nowrap;
+    margin-left: 10px;
+    font-size: .7rem;
+    font-style: italic;
+}
+.round2-date-placement {
+    font-weight: 500;
+    font-size: .7rem;
+    font-style: italic;
+    text-align: right;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+// ------------ 850px --------------------
+@media only screen and (max-width: 850px) {
+    .date-placement {
+        display: inline-block;
+        font-size: 0.5rem;
+    }
+    .round2-date-placement {
+        display: inline-block;
+        font-size: 0.5rem;
+    }
+}
+// ------------ 920px --------------------
+@media only screen and (max-width: 920px) {
+    .date-placement {
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+    .round2-date-placement {
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+}
+// ------------ 1260 px --------------------
+@media only screen and (max-width: 1260px) {
+    .date-placement {
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+    .round2-date-placement {
+        display: inline-block;
+        font-size: 0.6rem;
+    }
+}

@@ -1,0 +1,327 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.requests-table {
+    table{
+        border-collapse: separate;
+        border-spacing: 0px;
+        width: 100%;
+        caption {
+            caption-side: top;
+            text-align: center;
+        }
+        thead>tr>th {
+            @include borderRadius(5px 5px 0 0);
+            background-color: $pale-blue;
+            border-color: $grey2;
+            border-style: solid;
+            border-width: 1px;
+            color: $dk-blue;
+            font-size: 0.85rem;
+            font-weight: 500;
+            padding: 5px;
+            text-align: center;
+        }
+        thead>tr>th.icon-header {
+            font-size: 1.65rem;
+        }
+        thead>tr>th.subheader {
+            border-radius: revert;
+            border: none;
+            font-size: 0.75rem;
+        }
+        thead>tr>th.left {
+            border-left: 1px solid $grey2;
+        }
+        thead>tr>th.right {
+            border-right: 1px solid $grey2;
+        }
+        tbody>tr {
+            border-left: 1px solid $grey2;
+            border-right: 1px solid $grey2;
+        }
+        tbody>tr.stripe {
+            background-color: $grey0;;
+        }
+        tbody>tr.out-of-district {
+            background-color: $highlight;
+        }
+        tbody>tr.hidden-row {
+            display: none;
+        }
+        tbody>tr>td {
+            border-right: 1px solid $grey1; //pale-blue;
+            border-bottom: 1px solid $grey1; // $pale-blue;
+            font-size: 0.78rem;
+            padding: 3px;
+        }
+        tbody>tr>td>button {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            span {
+                font-size: 0.9rem;
+                font-weight: 500;
+            }
+        }
+        tbody>tr>td.email {
+            max-width: 10%;
+            width: 180px;
+            word-wrap: anywhere;
+        }
+        tbody>tr>td.icons {
+            align-items: right;
+            background-color: white;
+            border: none;
+            border-bottom: 1px solid $grey1;
+            border-left: 1px solid $grey1;
+        }
+        tbody>tr>td.icons-with-note {
+            align-items: right;
+            background-color: white;
+            border: none;
+            border-bottom: none;
+            border-left: 1px solid $grey1;
+        }
+        tbody>tr>td.oe-out {
+            background-color: white;
+        }
+        td.center {
+            text-align: center;
+        }
+        tbody>tr>td>div>textarea {
+            @include borderRadius(5px);
+            width:100%;
+        }
+        tbody>tr>td>div>button {
+            margin-top: 5px;
+        }
+        tbody>tr>td.first {
+            border-left: 1px solid $grey2;
+        }
+        tbody>tr>td.last {
+            border-right: 1px solid $grey2;
+        }
+        tbody>tr>td.notes {
+            background: $pale-blue;
+            font-size: 0.9rem;
+            padding: 10px;
+        }
+        tbody>tr>td.icon-last {
+            border: none;
+            border-left: 1px solid $grey1;
+            border-bottom: 2px solid $grey2;
+        }
+        tbody>tr>td>div.flexed-td {
+            align-items: center;
+            display: flex;
+            font-size: 0.7rem;
+            justify-content: flex-start;
+        }
+        tfoot>tr {
+            background-color: white;
+        }
+        tfoot>tr>td {
+            border-top: 1px solid $grey2;
+            padding-top: 10px;
+        }
+        tfoot>tr>td.icons {
+            border-top: 1px solid $grey2;
+            padding-top: 10px;
+        }
+        tfoot>tr>td>div {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            width: 100%;
+            margin: 0 auto;
+        }
+        tfoot>tr>td>div>.showing-records {
+            font-size: 0.8rem;
+            font-style: italic;
+            margin-top: 5px;
+            width: 33%;
+        }
+        .small {
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .fixed-btn {
+            display: block;
+            margin: 2px 0 2px 0;
+            min-width: 120px;
+            white-space: nowrap;
+        }
+    }
+}
+table#legend-table {
+    border-collapse: separate;
+    border-spacing: 0px;
+    width: 100%;
+    margin: 10px 0 10px 0;
+    width: 100%;
+    thead>tr>th {
+        @include borderRadius(5px 5px 0 0);
+        border: 1px solid $grey1;
+        color: $dk-blue;
+        font-size: 1.65rem;
+        font-weight: 500;
+        padding: 10px;
+    }
+    tbody>tr>td {
+        border-right: 1px solid $grey1;
+        border-top: 1px solid $grey1;
+        padding: 5px;
+    }
+    tbody>tr>td.first {
+        border-left: 1px solid $grey1;
+        text-align: center;
+        margin: 0 auto;
+        vertical-align: top;
+        span.sibling-icon {
+            font-size: 1.4rem;
+        }
+    }
+    tbody>tr>td.last {
+        border-bottom: 1px solid $grey1;
+    }
+    tbody>tr>td.highlight {
+        font-size: 0.7rem;
+        vertical-align: middle;
+    }
+    tbody>tr.out-of-district {
+        background-color: $highlight;
+    }
+}
+table#enroll-table {
+    tbody>tr>td {
+        font-size: 0.9rem;
+    }
+}
+.enroll-p {
+    font-size: 0.9rem;
+}
+.danger-p {
+    @include borderRadius(5px);
+    background-color: $highlight;
+    border: 2px solid $red;
+    color: black;
+    padding: 5px;
+}
+.success-p {
+    color: green;
+    font-weight: 500;
+}
+p.out-of-district {
+    background-color: $highlight;
+}
+.iep {
+    @include borderRadius(5px);
+    background-color: $pearl-blue;
+    border: 1px solid $pearl-blue;
+    color: $white;
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 4px;
+}
+.macanta {
+    @include borderRadius(5px);
+    background-color: $important;
+    border: 1px solid $pearl-blue;
+    color: $grey5;
+    font-size: 0.86rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+    padding: 2px 7px;
+}
+.sibling {
+    font-size: 1.0rem;
+    padding: 4px;
+}
+form#request-form, form#enroll-form {
+    div.enroll-flex {
+        margin-top: 5px;
+        width: 100%;
+    }
+    div.input-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-bottom: 3px;
+    }
+    input, label, select, textarea {
+        @include borderRadius(3px);
+        display: block;
+        width: 50% !important;
+    }
+    input, select {
+        @include standardInput();
+        min-width: 180px !important;
+    }
+    label {
+        color: $grey5;
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+    textarea {
+        @include standardInput();
+        width: 100% !important;
+    }
+    .checkbox input:before {
+        content: '';
+        background: #fff;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border: 1px solid black;
+    }
+
+    .checkbox input:checked:before {
+        background-color: green;
+    }
+}
+
+div.REQUEST {
+    background-color: grey;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.CANCELLED_REQUEST, div.DENY_OFFER, div.DENY_REQUEST {
+    background-color: red;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.MAKE_OFFER_PENDING, div.WAIT_LIST {
+    background-color: orange;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.MAKE_OFFER {
+    background-color: blue;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.ACCEPT_OFFER {
+    background-color: #28bfcd;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.ENROLLED {
+    background-color: green;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}
+div.NO_RESPONSE {
+    background-color: purple;
+    height: 30px;
+    margin-right: 5px;
+    width: 10px;
+}

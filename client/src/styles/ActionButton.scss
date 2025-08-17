@@ -1,0 +1,266 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.button-with-status-container {
+  display: flex
+}
+.status-on-button {
+  position: relative;
+  bottom: 10px;
+  right: 20px
+}
+
+.action-button-reg {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+.action-button-80 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 80px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+.action-button-100 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 100px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-150 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 150px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-200 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 200px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-delete {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $red;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 250px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-delete-100 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $red;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    width: 100px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-cancel {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $grey2;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+
+    &:active {
+      background: blue;
+    }
+    &:hover {
+      transform: scale(1.015);
+      background: $grey3;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  .action-button-admin {
+    @include borderRadius(3px);
+    cursor: pointer;
+    border: none;
+    background: $dashboard-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 7px;
+    font-weight: 600;
+    font-size: .85em;
+    margin-top: 10px;
+    transition: 0.1s ease-in-out;
+
+    &:hover {
+      padding-left: 30px;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+
+  @media only screen and (max-width: 1080px) {
+    .action-button-reason {
+      font-size: 0.7rem;
+      padding: 0px 8px;
+    }
+  }
+
+  .action-button-yep {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $pearl-blue;
+    color: white;
+    height: 30px;
+    transition: 0.1s ease;
+    padding: 0px 20px;
+    margin: 0 10px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $pearl-blue-hover;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+
+
+  @media only screen and (max-width: 1080px) {
+    .action-button-reason {
+      font-size: 0.7rem;
+      padding: 0px 8px;
+    }
+  }
+
+  .action-button-inactive-200 {
+    @include borderRadius(3px);
+    @include shadow();
+    cursor: pointer;
+    border: none;
+    background: $grey1;
+    opacity: .7;
+    height: 30px;
+    transition: 0.1s ease;
+    margin: 0 10px;
+    width: 200px;
+
+    &:hover {
+      transform: scale(1.015);
+      background: $grey3;
+    }
+    &:disabled {
+      opacity: .5;
+      cursor: not-allowed;
+    }
+  };
+  

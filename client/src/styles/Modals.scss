@@ -1,0 +1,26 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+// ! Important ! //
+// All styling that needs to be done for Open Enrollment modals (text & layout) is done in this SINGLE file
+.body {
+    font-weight: 500;
+    .age {
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
+.title {
+    color: $pearl-blue;
+}
+.text-color {
+    color: $pearl-blue;
+    span {
+        font-weight: 700;
+        text-decoration: underline;
+    }
+}
+.dialog-loader {
+    left: 50px;
+    position: absolute;
+}

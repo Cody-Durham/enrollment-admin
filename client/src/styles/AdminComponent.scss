@@ -1,0 +1,50 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.overall-container {
+    display: flex;
+
+    .left-side {
+        width: 50%;
+        display: flex;
+
+        .logo-container {
+            display: flex;
+            flex-direction: column;
+            margin-right: 10px;
+        }
+        .header-button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            margin-top: -8px;
+
+            .logo-header {
+                color: $dk-blue;
+                font-size: 1.8em;
+                font-weight: 600;
+            }
+        }
+    }
+    .right-container {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        .second-message {
+            margin-top: 10px;
+        }
+    }
+}
+.no-avail-slots-container {
+    display: flex;
+    align-items: center;
+    padding-left: 13px;
+
+    .no-avail-slots-text {
+        @include borderRadius(3px);
+        margin-left: 5px;
+        background: $important;
+        padding: 3px 6px;
+    }
+}

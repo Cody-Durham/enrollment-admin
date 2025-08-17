@@ -1,0 +1,64 @@
+@import "../styles/global/Colors";
+@import "../styles/global/globalMixins";
+
+.participating-schools-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .input-container {
+        width: 50%;
+        @include standardInputContainer;
+        display: flex;
+        flex-direction: column;
+
+        .participating-schools-dropdown {
+            @include standardInput();
+            color: $grey4a;
+        }
+    }
+
+}
+
+.data-container {
+    background: $grey2;
+    @include borderRadius(10px);
+    padding-top: -10px;
+    padding: 0 40px;
+    padding-bottom: 20px;
+    margin-top: 40px;
+    @include shadow;
+}
+
+.save-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    padding-right: 30px;
+}
+
+.no-data-message-heading {
+    padding: 5px 5px 5px 0;
+    margin-top: 30px;
+    margin-bottom: -20px;
+    font-weight: 600;
+    font-size: 1.3rem;
+    font-size: 1.22rem;
+
+    .bold-schoolName {
+        font-weight: 700;
+        font-style: italic;
+        color: $lt-pearl-blue;
+    }
+    .date-range {
+        background: $important;
+        @include borderRadius(2px);
+        font-size: 1.1rem;
+        margin-left: 5px;
+        padding: 3px 6px;
+        margin-left: 5px;
+    }
+}
+.no-data-message {
+    margin-top: 30px;
+}
